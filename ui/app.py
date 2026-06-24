@@ -127,7 +127,7 @@ class App(_TkBase):
         cb_row.pack(fill="x", pady=(4, 0))
         self._fmt_vars: dict[str, tk.BooleanVar] = {}
         for ext, label in _OUTPUT_FORMATS:
-            var = tk.BooleanVar(value=(ext == ".pdf"))
+            var = tk.BooleanVar(value=(ext in (".hwpx", ".xlsx")))
             self._fmt_vars[ext] = var
             tk.Checkbutton(
                 cb_row, text=label, variable=var, font=T.FONT_N,
