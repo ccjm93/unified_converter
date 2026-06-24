@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# PyInstaller 빌드 산출물(재생성 가능) — spec은 추적, 중간/최종 산출물은 제외
+/build/unified_converter/
+/dist/
+
+# OMC 상태(세션 전용)
+.omc/
+
+# 로그
+*.log
+
+# OS / 편집기
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

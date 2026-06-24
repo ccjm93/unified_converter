@@ -1,0 +1,10 @@
+# 통합 파일형식 변환기 의존성 (Windows 전용)
+pywin32>=306        # win32com.client / pythoncom — 한컴·Excel COM 자동화
+# pyhwpx는 의도적으로 사용하지 않음(내부 gencache/CoInitialize 의존 → frozen exe 배포 리스크).
+# 한컴 HWP/HWPX 변환은 win32com.client.Dispatch("HWPFrame.HwpObject")로 직접 수행.
+tkinterdnd2>=0.4    # 탐색기 → 목록 드래그&드롭(선택적: 없으면 버튼 추가만 동작).
+
+# 개발/테스트용
+pytest>=8.0
+# 패키징용
+pyinstaller>=6.0
